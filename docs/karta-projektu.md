@@ -27,6 +27,9 @@
 | Przeglądanie przez studentów dostępnych terminów konsultacji. | Rzeczywiste wdrożenie systemu na uczelni. |
 | Rezerwowanie i odwoływanie konsultacji przez studentów. | Integracja z systemami USOS i innymi systemami uczelnianymi. |
 | Zarządzanie harmonogramem konsultacji przez wykładowców. | Obsługa konsultacji online i wideokonferencji. |
+| Ustalenie dostępności przez wykładowców. | Aplikacja mobilna |
+| Przeglądanie listy zapisanych studentów przez wykładowców | |
+| Zarządzanie harmonogramem konsultacji przez wykładowców. | |
 
 ### 5. Interesariusze
 
