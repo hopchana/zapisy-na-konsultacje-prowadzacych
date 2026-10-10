@@ -51,5 +51,27 @@
 | PY-01 | pytanie | Czy logowanie do systemu będzie odbywać się za pomocą kont uczelnianych? | Administracja uczelni | otwarte |
 | PY-02 | pytanie | Czy system ma automatycznie wysyłać wiadomości e-mail z potwierdzeniem rezerwacji i informacją o jej odwołaniu? | Studenci / wykładowcy | otwarte |
 | PY-03 | pytanie | Czy konsultacje będą odbywać się wyłącznie stacjonarnie, czy również online? | Wykładowcy | otwarte |
+
+### 9. Dwa kryteria akceptacji w formacie Dane/Gdy/Wtedy
+
+**KA-01 - Rezerwacja terminu konsultacji**
+**Dane:** Student jest zalogowany do systemu i wybrał wykładowcę, który posiada dostępne terminy konsultacji.
+**Gdy:** Student wybierze wolny termin konsultacji i zatwierdzi rezerwację.
+**Wtedy:** System zapisze rezerwację, wyświetli komunikat potwierdzający oraz zaktualizuje liczbę dostępnych miejsc na wybrany termin.
+
+**KA-02 – Odwołanie rezerwacji konsultacji**
+**Dane:** Student jest zalogowany do systemu i posiada aktywną rezerwację na przyszły termin konsultacji.
+**Gdy:** Student wybierze swoją rezerwację i potwierdzi jej odwołanie.
+**Wtedy:** System anuluje rezerwację, wyświetli komunikat potwierdzający oraz ponownie udostępni zwolnione miejsce innym studentom.
+
+### 11. Rejestr ryzyk
+
+| ID | Ryzyko | Prawdopodobieństwo (N/Ś/W) | Wpływ (N/Ś/W) | Reakcja |
+|---|---|---|---|---|
+| R-01 | Konflikty rezerwacji wynikające z jednoczesnego wyboru tego samego terminu przez kilku studentów. | Ś | W | Wdrożenie mechanizmu kontroli dostępności i blokowania miejsc podczas zapisywania rezerwacji. |
+| R-02 | Niska akceptacja systemu przez studentów i wykładowców. | Ś | W | Zapewnienie intuicyjnego interfejsu, przeprowadzenie testów z użytkownikami oraz przygotowanie instrukcji obsługi. |
+| R-03 | Nieautoryzowany dostęp do danych użytkowników i informacji o rezerwacjach. | Ś | W | Zastosowanie uwierzytelniania, kontroli uprawnień oraz odpowiednich mechanizmów ochrony danych. |
+| R-04 | Awaria systemu uniemożliwiająca rezerwowanie i odwoływanie konsultacji. | Ś | W | Wdrożenie systemu monitorowania, regularnych kopii zapasowych oraz procedur przywracania działania systemu. |
+| R-05 | Zmiany wymagań funkcjonalnych w trakcie realizacji projektu powodujące opóźnienia. | Ś | Ś | Wczesne uzgodnienie wymagań z interesariuszami, określenie priorytetów i kontrolowanie wprowadzanych zmian. |
 | PY-04 | pytanie | Czy konsultacje będą miały charakter indywidualny, czy również grupowy? | Wykładowcy | otwarte |
 | PY-05 | pytanie | Czy rezerwacje mają być zatwierdzane automatycznie, czy wymagać akceptacji wykładowcy? | Wykładowcy | otwarte |
