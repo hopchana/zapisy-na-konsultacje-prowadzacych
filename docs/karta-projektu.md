@@ -51,6 +51,8 @@
 | PY-01 | pytanie | Czy logowanie do systemu będzie odbywać się za pomocą kont uczelnianych? | Administracja uczelni | otwarte |
 | PY-02 | pytanie | Czy system ma automatycznie wysyłać wiadomości e-mail z potwierdzeniem rezerwacji i informacją o jej odwołaniu? | Studenci / wykładowcy | otwarte |
 | PY-03 | pytanie | Czy konsultacje będą odbywać się wyłącznie stacjonarnie, czy również online? | Wykładowcy | otwarte |
+| PY-04 | pytanie | Czy konsultacje będą miały charakter indywidualny, czy również grupowy? | Wykładowcy | otwarte |
+| PY-05 | pytanie | Czy rezerwacje mają być zatwierdzane automatycznie, czy wymagać akceptacji wykładowcy? | Wykładowcy | otwarte |
 
 ### 8. Wymagania niefunkcjonalne (WNF)
 
@@ -84,5 +86,4 @@
 | R-03 | Nieautoryzowany dostęp do danych użytkowników i informacji o rezerwacjach. | Ś | W | Zastosowanie uwierzytelniania, kontroli uprawnień oraz odpowiednich mechanizmów ochrony danych. |
 | R-04 | Awaria systemu uniemożliwiająca rezerwowanie i odwoływanie konsultacji. | Ś | W | Wdrożenie systemu monitorowania, regularnych kopii zapasowych oraz procedur przywracania działania systemu. |
 | R-05 | Zmiany wymagań funkcjonalnych w trakcie realizacji projektu powodujące opóźnienia. | Ś | Ś | Wczesne uzgodnienie wymagań z interesariuszami, określenie priorytetów i kontrolowanie wprowadzanych zmian. |
-| PY-04 | pytanie | Czy konsultacje będą miały charakter indywidualny, czy również grupowy? | Wykładowcy | otwarte |
-| PY-05 | pytanie | Czy rezerwacje mają być zatwierdzane automatycznie, czy wymagać akceptacji wykładowcy? | Wykładowcy | otwarte |
+
