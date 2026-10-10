@@ -46,6 +46,10 @@
 | ZA-01 | założenie | System będzie dostępny przez przeglądarkę internetową. | Klient / przedstawiciel uczelni | niepotwierdzone |
 | ZA-02 | założenie | Studenci i wykładowcy będą korzystać z różnych uprawnień dostępu do systemu. | Klient / przedstawiciel uczelni | niepotwierdzone |
 | ZA-03 | założenie | Jeden termin konsultacji nie będzie mógł zostać zarezerwowany przez więcej osób, niż przewiduje limit miejsc. | Wykładowcy | niepotwierdzone |
+| ZA-04 | założenie | Wykładowcy będą samodzielnie ustalać i aktualizować dostępne terminy konsultacji. | Wykładowcy | niepotwierdzone |
+| ZA-05 | założenie | Studenci będą mogli samodzielnie rezerwować i odwoływać terminy konsultacji. | Studenci | niepotwierdzone |
 | PY-01 | pytanie | Czy logowanie do systemu będzie odbywać się za pomocą kont uczelnianych? | Administracja uczelni | otwarte |
-| PY-01 | pytanie | Czy system ma automatycznie wysyłać wiadomości e-mail z potwierdzeniem rezerwacji i informacją o jej odwołaniu? | Studenci / wykładowcy | otwarte |
-| PY-01 | pytanie | Czy konsultacje będą odbywać się wyłącznie stacjonarnie, czy również online? | Wykładowcy | otwarte |
+| PY-02 | pytanie | Czy system ma automatycznie wysyłać wiadomości e-mail z potwierdzeniem rezerwacji i informacją o jej odwołaniu? | Studenci / wykładowcy | otwarte |
+| PY-03 | pytanie | Czy konsultacje będą odbywać się wyłącznie stacjonarnie, czy również online? | Wykładowcy | otwarte |
+| PY-04 | pytanie | Czy konsultacje będą miały charakter indywidualny, czy również grupowy? | Wykładowcy | otwarte |
+| PY-05 | pytanie | Czy rezerwacje mają być zatwierdzane automatycznie, czy wymagać akceptacji wykładowcy? | Wykładowcy | otwarte |
