@@ -52,6 +52,17 @@
 | PY-02 | pytanie | Czy system ma automatycznie wysyłać wiadomości e-mail z potwierdzeniem rezerwacji i informacją o jej odwołaniu? | Studenci / wykładowcy | otwarte |
 | PY-03 | pytanie | Czy konsultacje będą odbywać się wyłącznie stacjonarnie, czy również online? | Wykładowcy | otwarte |
 
+### 8. Wymagania niefunkcjonalne (WNF)
+
+| ID | Obszar | Wymaganie | Miernik / sposób przyszłej weryfikacji | Źródło |
+|---|---|---|---|---|
+| WNF-01 | bezpieczeństwo | System musi umożliwiać dostęp do funkcji zgodnie z rolą użytkownika. Student może zarządzać własnymi rezerwacjami, a wykładowca swoim harmonogramem konsultacji. | Testy uprawnień dla kont studenta i wykładowcy, w tym próby dostępu do funkcji niedostępnych dla danej roli. | Założenie projektowe |
+| WNF-02 | dostępność | System powinien być dostępny przez przeglądarkę internetową i umożliwiać korzystanie z podstawowych funkcji bez konieczności instalowania dodatkowego oprogramowania. | Test uruchomienia systemu i wykonania rezerwacji w uzgodnionych przeglądarkach internetowych. Lista przeglądarek: do uzgodnienia. | Cel biznesowy projektu |
+| WNF-03 | audyt | System powinien rejestrować istotne operacje związane z rezerwacjami, w szczególności ich utworzenie, zmianę i odwołanie, wraz z datą i godziną wykonania operacji. | Test wykonania każdej z wymienionych operacji i sprawdzenie, czy zapis zawiera wymagane informacje. Okres przechowywania zapisów: do uzgodnienia. | Założenie projektowe |
+| WNF-04 | wydajność | System powinien wyświetlać listę dostępnych terminów konsultacji w czasie umożliwiającym sprawne korzystanie z aplikacji. | Pomiar czasu wyświetlenia listy terminów w ustalonych warunkach. Maksymalny czas odpowiedzi: do uzgodnienia. | Cel biznesowy projektu |
+| WNF-05 | integralność danych | System nie może dopuścić do zarezerwowania tego samego miejsca na konsultację przez więcej niż jednego studenta. | Test równoczesnych prób rezerwacji tego samego miejsca; poprawny wynik to maksymalnie jedna skuteczna rezerwacja. | Założenie projektowe |
+| WNF-05 | użyteczność | Interfejs systemu powinien umożliwiać studentowi odnalezienie dostępnego terminu i dokonanie rezerwacji bez konieczności kontaktowania się z wykładowcą poza systemem. | Test użyteczności polegający na wykonaniu rezerwacji przez reprezentatywnych użytkowników. Kryterium zaliczenia i liczba uczestników: do uzgodnienia. | Cel biznesowy projektu |
+
 ### 9. Dwa kryteria akceptacji w formacie Dane/Gdy/Wtedy
 
 **KA-01 - Rezerwacja terminu konsultacji**
