@@ -46,3 +46,23 @@
 | PY-01 | pytanie | Czy logowanie do systemu będzie odbywać się za pomocą kont uczelnianych? | Administracja uczelni | otwarte |
 | PY-01 | pytanie | Czy system ma automatycznie wysyłać wiadomości e-mail z potwierdzeniem rezerwacji i informacją o jej odwołaniu? | Studenci / wykładowcy | otwarte |
 | PY-01 | pytanie | Czy konsultacje będą odbywać się wyłącznie stacjonarnie, czy również online? | Wykładowcy | otwarte |
+
+### 7. Wymagania funcjonalne
+
+| ID | Treść | Priorytet | Źródło | Kryterium akceptacji / uwagi |
+|WF-1|System pozwala studentom na zapoznanie się z dostępnymi terminami konsutacji|Wysoki|Wymagania klienta||System wymaga aktywnego statusu studenta|
+|WF-2|Zalogowany student może zapisać się na konsultacje z zajęć na które jest zapisany  | 
+Wysoki |Analiza wymagań|Dostęp dotyczy zajęć powiązanych ze studentem|
+| WF-3 | Prowadzący konsultacje ma możliwość edycji terminów spotkań | Wysoki |W przypadku edycji terminu studenci są informowani o zmianach |
+| WF-4 | Student może odwołać swoją obecność na konsultacjach| Wysoki | Anulowany termin powraca do puli aktywnych terminów|
+| WF-5 | Student otrzymuje przypomnienie o nadchodzących konultacjach drogą mailową | Średni | Analiza wymagań ||
+
+### 8. Wymagania niefunkcjonalne
+
+| ID | Treść | Priorytet | Źródło | Kryterium akceptacji / uwagi |
+|WNF-1|System pozwala na zmianę interfejsu języka na język angielski|Średni|Wymagania klienta|||
+|WNF-2|Komunikaty systemu są napisane w sposób zrozumiały dla każdej osoby| 
+Wysoki |Analiza wymagań||
+| WNF-3 |System pozwala na obsługę usługi na urządzeniach mobilnych| Wysoki ||
+
+
