@@ -58,14 +58,17 @@
 
 | ID | Treść | Priorytet | Źródło | Kryterium akceptacji / uwagi |
 |---|---|---|---|---|
-| WF-01 | System pozwala studentom na zapoznanie się z dostępnymi terminami konsutacji |Wysoki|||  
-| WF-02 | Student może zapisać się na konsultacje z zajęć na które jest zapisany | Wysoki ||
-| WF-03 | Student może odwołać swoją obecność na konsultacjach | Wysoki ||
-| WF-04 | Student otrzymuje przypomnienie o nadchodzących konultacjach drogą mailową | Średni | Analiza wymagań ||
-| WF-05 | Wykładowca może przeglądać harmonogram konsultacji|Wysoki|Wymagania klienta||
+| WF-01 | System pozwala studentom na zapoznanie się z dostępnymi terminami konsutacji |Wysoki|INT-01||  
+| WF-02 | Student może zapisać się na konsultacje z zajęć na które jest zapisany | Wysoki |INT-01||
+| WF-03 | Student może odwołać swoją obecność na konsultacjach | Wysoki |||
+| WF-04 | Student otrzymuje przypomnienie o nadchodzących konultacjach drogą mailową | Średni |||
+| WF-05 | Wykładowca może przeglądać harmonogram konsultacji|Wysoki|||
 | WF-06 | Wykładowca dodaje terminy konsultacji | Wysoki ||
-| WF-07 | Wykładowca ma możliwość edycji terminów swoich spotkań | Wysoki ||
-| WF-08 | Wykładowca może odwołać zaplanowane konsultacje | Wysoki ||
+| WF-07 | Wykładowca określa limity zapisów na konsultacje|Wysoki|||
+| WF-08 | Wykładowca ustala charakter konsultacji |Wysoki|||
+| WF-09 | Wykładowca wybiera tryb konsultacji (stacjonarny/online)|Wysoki|||
+| WF-10 | Wykładowca ma możliwość edycji terminów swoich spotkań | Wysoki ||
+| WF-11 | Wykładowca może odwołać zaplanowane konsultacje | Wysoki ||
 
 ### 8. Wymagania niefunkcjonalne (WNF)
 
