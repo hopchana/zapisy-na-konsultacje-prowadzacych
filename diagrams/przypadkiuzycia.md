@@ -36,7 +36,27 @@
 
 
 
-**UC-03** Przypomnienie o konsultacjach. <br>
+
+**UC-03** Odwołanie obecności na konultacjach. <br>
+**Aktor główny:** Student <br>
+**Warunki wstępne:** Student pomyślnie zapisał się na konsultacje <br>
+**Wyzwalacz:** Student wybiera funkcje odwołania obecności na konsultacjach <br>
+
+**Przebieg podstawowy:** 
+1. Student przegląda konsultacje, na które jest zapisany.
+2. Student wybiera konsultacje do odwołania.
+3. Student wybiera opcje odwołaj konsultację.
+4. System zwraca komunikat z prośbą o potwierdzenie odwołania konsultacji.
+5. Student potwierdza odwołanie.
+6. System zmniejsza liczbę zapisanych studentów na konsultacje.
+7. System zwraca potwierdzenie odwołania konsultacji.
+**Przebieg alternatywny:**
+-A1 - System nie może wysłać przypomnienia z powodu odwołanych konsultacji
+
+**Warunek końcowy**: Student odwołuje swoją obecność, a system zmniejsza liczbę osób zapisanych.
+
+
+**UC-04** Przypomnienie o konsultacjach. <br>
 **Aktor główny:** Student <br>
 **Warunki wstępne:** Student pomyślnie zapisał się na konsultacje <br>
 **Wyzwalacz:** Przypomnienie wysyłane 24 godziny przed terminem <br>
@@ -47,6 +67,6 @@
 3. System wysyła wiadomość do studenta z informacją o nadchodzącej konsultacji.
 4. System potwierdza wysłanie przypomnienia
 **Przebieg alternatywny:**
--A1 - 
+-A1 - System nie może wysłać przypomnienia z powodu odwołanych konsultacji
 
 **Warunek końcowy**: Student otrzymuje przypomnienie o nadchodzących konsultacjach.
