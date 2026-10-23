@@ -11,7 +11,7 @@
 5. Aktor zapoznaje się z terminami.
 
 **Przebieg alternatywny:**
--A1 - Aktorem jest wykładowca:System pomija punkt 2 i 3 przechodząc do punktu 4 przebiegu podstawowego.
+2a - Aktorem jest wykładowca:System pomija punkt 2 i 3 przechodząc do punktu 4 przebiegu podstawowego.
 
 **Warunek końcowy**: Aktor uzyskał dostęp do harmonogramu konsultacji na zgodnie z rolą w systemie.
 
@@ -35,8 +35,6 @@
 **Warunek końcowy**: Student zostaje poprawnie zapisany na wybrane konsultacje.
 
 
-
-
 **UC-03** Odwołanie obecności na konultacjach. <br>
 **Aktor główny:** Student <br>
 **Warunki wstępne:** Student pomyślnie zapisał się na konsultacje <br>
@@ -51,7 +49,7 @@
 6. System zmniejsza liczbę zapisanych studentów na konsultacje.
 7. System zwraca potwierdzenie odwołania konsultacji.
 **Przebieg alternatywny:**
--A1 - System nie może wysłać przypomnienia z powodu odwołanych konsultacji
+-A1 - System nie może odwołać obecności z powodu braku potwierdzenia odwołania przez studenta
 
 **Warunek końcowy**: Student odwołuje swoją obecność, a system zmniejsza liczbę osób zapisanych.
 
@@ -67,6 +65,24 @@
 3. System wysyła wiadomość do studenta z informacją o nadchodzącej konsultacji.
 4. System potwierdza wysłanie przypomnienia
 **Przebieg alternatywny:**
--A1 - System nie może wysłać przypomnienia z powodu odwołanych konsultacji
+-A1 - System nie może wysłać przypomnienia z powodu odwołanych konsultacji przez wykładowcę
+-A2 - System nie może wysłać przypomnienia z powodu odwołanej obecności przez studenta
 
 **Warunek końcowy**: Student otrzymuje przypomnienie o nadchodzących konsultacjach.
+
+
+**UC-05** Dodanie konsultacji <br>
+**Aktor główny:** Wykładowca <br>
+**Warunki wstępne:** Wykładowca jest zalogowany <br>
+**Wyzwalacz:** Wybór funkcji dodaj konsultacje <br>
+
+**Przebieg podstawowy:** 
+1. Wykładowca wybiera funkcję dodaj konsultacje.
+2. Wypełnia formularz konsultacji.
+3. System waliduje formularz.
+4. System potwierdza dodanie terminu konsultacji.
+**Przebieg alternatywny:**
+-A1 - System informuje o błednej walidacji danych 
+-A2 - System nie może dodać konsultacji z powodu kolizji terminów
+
+**Warunek końcowy**: Konsultacje zostają dodane do bazy.
