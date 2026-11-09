@@ -11,6 +11,7 @@
 5. Aktor zapoznaje się z terminami.
 
 **Przebieg alternatywny:**
+
 2a - Aktorem jest wykładowca:System pomija punkt 2 i 3 przechodząc do punktu 4 przebiegu podstawowego.
 
 **Warunek końcowy**: Aktor uzyskał dostęp do harmonogramu konsultacji na zgodnie z rolą w systemie.
@@ -30,7 +31,8 @@
 6. System zwraca potwierdzenie zapisu.
 
 **Przebieg alternatywny:**
--A1 - Brak dostępności wybranego terminu:System informuje studenta o niedostępności terminu.
+
+1a - Brak dostępności wybranego terminu:System informuje studenta o niedostępności terminu.
 
 **Warunek końcowy**: Student zostaje poprawnie zapisany na wybrane konsultacje.
 
@@ -48,8 +50,11 @@
 5. Student potwierdza odwołanie.
 6. System zmniejsza liczbę zapisanych studentów na konsultacje.
 7. System zwraca potwierdzenie odwołania konsultacji.
+
 **Przebieg alternatywny:**
--A1 - System nie może odwołać obecności z powodu braku potwierdzenia odwołania przez studenta
+
+5a - Student rezygnuje z odwołania oecności: krok 6 i 7 jest pomijany
+
 
 **Warunek końcowy**: Student odwołuje swoją obecność, a system zmniejsza liczbę osób zapisanych.
 
@@ -64,9 +69,11 @@
 2. System generuje przypomnienie z datą i godziną konsultacji.
 3. System wysyła wiadomość do studenta z informacją o nadchodzącej konsultacji.
 4. System potwierdza wysłanie przypomnienia
+
 **Przebieg alternatywny:**
--A1 - System nie może wysłać przypomnienia z powodu odwołanych konsultacji przez wykładowcę
--A2 - System nie może wysłać przypomnienia z powodu odwołanej obecności przez studenta
+
+3a - System nie może wysłać przypomnienia z powodu odwołanych konsultacji przez wykładowcę <br>
+3b - System nie może wysłać przypomnienia z powodu odwołanej obecności przez studenta
 
 **Warunek końcowy**: Student otrzymuje przypomnienie o nadchodzących konsultacjach.
 
@@ -81,8 +88,51 @@
 2. Wypełnia formularz konsultacji.
 3. System waliduje formularz.
 4. System potwierdza dodanie terminu konsultacji.
+
 **Przebieg alternatywny:**
--A1 - System informuje o błednej walidacji danych 
--A2 - System nie może dodać konsultacji z powodu kolizji terminów
+
+4a - System informuje o błednej walidacji danych <br>
+4b - System nie może dodać konsultacji z powodu kolizji terminów
 
 **Warunek końcowy**: Konsultacje zostają dodane do bazy.
+
+
+**UC-06** Edycja konsultacji <br>
+**Aktor główny:** Wykładowca <br>
+**Warunki wstępne:** Konsultacja poprawnie dodana <br>
+**Wyzwalacz:** Wybór funkcji edytuj konsultację <br>
+
+**Przebieg podstawowy:** 
+1. Wykładowca wybiera funkcję edytuj konsultację.
+2. Wypełnia formularz edycji.
+3. System waliduje formularz.
+4. System potwierdza edycje terminu konsultacji.
+5. System aktualizuje bazę danych.
+6. System powiadamia uczestników o zmianach.
+
+**Przebieg alternatywny:**
+
+3a - System informuje o błednej walidacji danych <br>
+4a - System nie może edytować konsultacji z powodu kolizji terminów
+
+**Warunek końcowy**: Konsultacje zostają edytowane.
+
+
+**UC-07** Odwołanie konsultacji <br>
+**Aktor główny:** Wykładowca <br>
+**Warunki wstępne:** Konsultacja została utworzona przez wykładowcę <br>
+**Wyzwalacz:** Wybór funkcji odwołaj konsultacje <br>
+
+**Przebieg podstawowy:** 
+1. Wykładowca wybiera funkcję odwołaj konsultacje.
+2. System zwraca informacje przypisane do konsultacji.
+3. System wymaga potwierdzenia wyboru odwołania.
+4. Wykładowca potwierdza wybór.
+5. System usuwa termin z bazy danych.
+6. System powiadamia zapisane osoby o odwołaniu konsultacji. <br>
+
+**Przebieg alternatywny:**
+
+4a - Wykładowca nie dokonuje potwierdzenia odwołania.  
+
+**Warunek końcowy**: Konsultacje zostają usunięte z bazy.
