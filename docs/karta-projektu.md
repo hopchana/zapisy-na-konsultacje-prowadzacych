@@ -58,17 +58,17 @@
 
 | ID | Treść | Priorytet | Źródło | Kryterium akceptacji / uwagi |
 |---|---|---|---|---|
-| WF-01 | System pozwala studentom na zapoznanie się z dostępnymi terminami konsutacji |Wysoki|INT-01||  
-| WF-02 | Student może zapisać się na konsultacje z zajęć na które jest zapisany | Wysoki |INT-01||
-| WF-03 | Student może odwołać swoją obecność na konsultacjach | Wysoki |||
-| WF-04 | Student otrzymuje przypomnienie o nadchodzących konultacjach drogą mailową | Średni |||
-| WF-05 | Wykładowca może przeglądać harmonogram konsultacji|Wysoki|||
-| WF-06 | Wykładowca dodaje terminy konsultacji | Wysoki ||
-| WF-07 | Wykładowca określa limity zapisów na konsultacje|Wysoki|||
-| WF-08 | Wykładowca ustala charakter konsultacji |Wysoki|||
-| WF-09 | Wykładowca wybiera tryb konsultacji (stacjonarny/online)|Wysoki|||
-| WF-10 | Wykładowca ma możliwość edycji terminów swoich spotkań | Wysoki ||
-| WF-11 | Wykładowca może odwołać zaplanowane konsultacje | Wysoki ||
+| WF-01 | System pozwala studentom na zapoznanie się z dostępnymi terminami konsutacji |Wysoki|INT-01|System zwraca dostępne terminy konsultacji.|  
+| WF-02 | Student może zapisać się na konsultacje z zajęć na które jest zapisany | Wysoki |INT-01|Student wybiera termin konsultacji i zapisuje się na zajęcia. System dodaje studenta do konsultacji w wybranym terminie|
+| WF-03 | Student może odwołać swoją obecność na konsultacjach | Wysoki |INT-01|Student odwołuje swoją obencość na konsultacjach. System usuwa studenta z listy zapisanych osób|
+| WF-04 | Student otrzymuje przypomnienie o nadchodzących konultacjach drogą mailową | Średni |INT-01|System wysyła przypomnienie mailem o nadchodzących konsultacjach.|
+| WF-05 | Wykładowca może przeglądać harmonogram konsultacji|Wysoki|INT-02|System zwraca informacje o dodanych przez wykładowcę terminach konsultacji|
+| WF-06 | Wykładowca dodaje terminy konsultacji | Wysoki |INT-02|Wykładowca dodaje termin konsultacji do terminarza. System dodaje do bazy nowy rekord|
+| WF-07 | Wykładowca określa limity zapisów na konsultacje|Wysoki|INT-02|Wykładowca ustala limit zapisów na konsultacje. System blokuje zapisy na konsultacje powyżej limitu studentów|
+| WF-08 | Wykładowca ustala charakter konsultacji |Średni|INT-02|Wykładowca ustala charakter konsultacji (indywidualny/grupowy)|
+| WF-09 | Wykładowca wybiera tryb konsultacji (stacjonarny/online)|Średni|INT-02|Wykładowca decyduje w jakim trybie odbędą się konsultacje, stacjonarnie czy też online|
+| WF-10 | Wykładowca ma możliwość edycji terminów swoich spotkań | Wysoki |INT-02|System pozwala wykładowcy na edycje terminu wcześniej dodanego. O zmianach system informuje studentów mailowo|
+| WF-11 | Wykładowca może odwołać zaplanowane konsultacje | Wysoki |INT-02|Wykładowca może odwołać swoje konsultacje. System informuje zapisane osoby o odwołaniu mailowo|
 
 ### 8. Wymagania niefunkcjonalne (WNF)
 
