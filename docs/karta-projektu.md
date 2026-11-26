@@ -54,6 +54,22 @@
 | PY-04 | pytanie | Czy konsultacje będą miały charakter indywidualny, czy również grupowy? | Wykładowcy | otwarte |
 | PY-05 | pytanie | Czy rezerwacje mają być zatwierdzane automatycznie, czy wymagać akceptacji wykładowcy? | Wykładowcy | otwarte |
 
+### 7. Wymagania funcjonalne (WF)
+
+| ID | Treść | Priorytet | Źródło | Kryterium akceptacji / uwagi |
+|---|---|---|---|---|
+| WF-01 | System pozwala studentom na zapoznanie się z dostępnymi terminami konsutacji |Wysoki|INT-01|System zwraca dostępne terminy konsultacji.|  
+| WF-02 | Student może zapisać się na konsultacje z zajęć na które jest zapisany | Wysoki |INT-01|Student wybiera termin konsultacji i zapisuje się na zajęcia. System dodaje studenta do konsultacji w wybranym terminie|
+| WF-03 | Student może odwołać swoją obecność na konsultacjach | Wysoki |INT-01|Student odwołuje swoją obencość na konsultacjach. System usuwa studenta z listy zapisanych osób|
+| WF-04 | Student otrzymuje przypomnienie o nadchodzących konultacjach drogą mailową | Średni |INT-01|System wysyła przypomnienie mailem o nadchodzących konsultacjach.|
+| WF-05 | Wykładowca może przeglądać harmonogram konsultacji|Wysoki|INT-02|System zwraca informacje o dodanych przez wykładowcę terminach konsultacji|
+| WF-06 | Wykładowca dodaje terminy konsultacji | Wysoki |INT-02|Wykładowca dodaje termin konsultacji do terminarza. System dodaje do bazy nowy rekord|
+| WF-07 | Wykładowca określa limity zapisów na konsultacje|Wysoki|INT-02|Wykładowca ustala limit zapisów na konsultacje. System blokuje zapisy na konsultacje powyżej limitu studentów|
+| WF-08 | Wykładowca ustala charakter konsultacji |Średni|INT-02|Wykładowca ustala charakter konsultacji (indywidualny/grupowy)|
+| WF-09 | Wykładowca wybiera tryb konsultacji (stacjonarny/online)|Średni|INT-02|Wykładowca decyduje w jakim trybie odbędą się konsultacje, stacjonarnie czy też online|
+| WF-10 | Wykładowca ma możliwość edycji terminów swoich spotkań | Wysoki |INT-02|System pozwala wykładowcy na edycje terminu wcześniej dodanego. O zmianach system informuje studentów mailowo|
+| WF-11 | Wykładowca może odwołać zaplanowane konsultacje | Wysoki |INT-02|Wykładowca może odwołać swoje konsultacje. System informuje zapisane osoby o odwołaniu mailowo|
+
 ### 8. Wymagania niefunkcjonalne (WNF)
 
 | ID | Obszar | Wymaganie | Miernik / sposób przyszłej weryfikacji | Źródło |
@@ -86,4 +102,3 @@
 | R-03 | Nieautoryzowany dostęp do danych użytkowników i informacji o rezerwacjach. | Ś | W | Zastosowanie uwierzytelniania, kontroli uprawnień oraz odpowiednich mechanizmów ochrony danych. |
 | R-04 | Awaria systemu uniemożliwiająca rezerwowanie i odwoływanie konsultacji. | Ś | W | Wdrożenie systemu monitorowania, regularnych kopii zapasowych oraz procedur przywracania działania systemu. |
 | R-05 | Zmiany wymagań funkcjonalnych w trakcie realizacji projektu powodujące opóźnienia. | Ś | Ś | Wczesne uzgodnienie wymagań z interesariuszami, określenie priorytetów i kontrolowanie wprowadzanych zmian. |
-
